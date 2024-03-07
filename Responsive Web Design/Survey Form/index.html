@@ -6,11 +6,50 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">Dog Adoption Survey Form</h1>
+    <p id="description">Please take the time to let us know a bit about you and your preferences.</p>
     
     <form action="POST" id="survey-form">
-        
+        <!-- Adopter Name, Email and Number -->
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" required placeholder="Enter your full name">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email address">
+        <label for="number" id="phone-label">Phone Number: </label>
+        <input type="number" name="phone-number" id="phone-label" placeholder="Enter your phone number" max="7">
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" name="number" id="number" placeholder="Enter your age">
+
+        <!-- Dropdown selection for pet age -->
+        <p>What is your current age preference?</p>
+        <select name="dropdown" id="dropdown">
+            <option value="puppy">Puppy</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <!-- Radio selection for gender -->
+        <p>Please select a preference for gender.</p>
+        <input type="radio" name="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="both" id="both">
+        <label for="both">Doesn't matter</label>
+
+        <!-- Checkbox selection for contact time -->
+        <p>What is the best time of day to reach you?</p>
+        <input type="checkbox" name="morning" id="morning">
+        <label for="morning">Morning</label>
+        <input type="checkbox" name="afternoon" id="afternoon">
+        <label for="afternoon">Afternoon</label>
+        <input type="checkbox" name="evening" id="evening">
+        <label for="evening">Evening</label>
+
+        <!-- Text area for additional comments -->
+        <p>Please let us know if you have any additional questions or concerns in the space below.</p>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <button id="submit">Submit</button>
     </form>
 </body>
 </html>
