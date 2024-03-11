@@ -1,0 +1,96 @@
+body {
+    max-width: 75%;
+    margin: 30px auto;
+    padding: 0px;
+    color: #1A090D;
+    background-color: #EEC549;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(193, 119, 103, 0.25);
+    max-width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+#description {
+    font-style: italic;
+}
+
+label {
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: "Gabarito", sans-serif;
+}
+
+input {
+    width: 100%;
+    margin: 6px auto;
+    padding: 8px 10px;
+    border: 1px solid #B0BBBF;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 2px solid #1A090D;
+    outline: #EEC549;
+}
+
+#number {
+    width: 25%;
+}
+
+select {
+    display: block;
+    width: 75%;
+    margin: 6px auto;
+    padding: 6px 8px;
+    border: 1px solid #B0BBBF;
+    border-radius: 5px;
+}
+select:focus {
+    border: 2px solid #1A090D;
+    outline: #EEC549;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: inline;
+}
+.radio-check {
+    display: inline;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 150px; 
+    overflow: hidden;
+    padding: 2px 5px;
+    margin: 0 auto;
+    border: 1px solid #B0BBBF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: #EEC549;
+    resize: none;
+}
+
+.textarea:focus {
+    border: 2px solid #1A090D;
+    outline: #EEC549;
+}
+
+#submit {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: .75rem .5rem;
+    background-color: rgba(244, 96, 54, 0.7);
+    border: 1px solid #F46036;
+    border-radius: 5px;
+}
+
+#submit::selection {
+    background-color: rgba(244, 96, 54, .95);
+}
