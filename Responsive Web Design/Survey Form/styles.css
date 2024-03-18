@@ -4,15 +4,20 @@ body {
     padding: 0px;
     color: #1A090D;
     background-color: #EEC549;
+}
+
+#title, #description {
     text-align: center;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(193, 119, 103, 0.25);
     max-width: 100%;
     height: 100%;
-    padding: 10px 10px;
-    margin: 0 auto;
+    padding: 30px 10px;
 }
 
 #description {
@@ -20,14 +25,27 @@ body {
 }
 
 label {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.2rem;
     font-family: "Gabarito", sans-serif;
 }
 
-input {
+h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: "Gabarito", sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: "Gabarito", sans-serif;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    display: block;
     width: 100%;
-    margin: 6px auto;
+    max-width: 750px;
+    margin: 6px 0;
     padding: 8px 10px;
     border: 1px solid #B0BBBF;
     border-radius: 5px;
@@ -46,7 +64,7 @@ input:focus {
 select {
     display: block;
     width: 75%;
-    margin: 6px auto;
+    margin: 6px 0;
     padding: 6px 8px;
     border: 1px solid #B0BBBF;
     border-radius: 5px;
@@ -56,15 +74,25 @@ select:focus {
     outline: #EEC549;
 }
 
-input[type=radio], input[type=checkbox] {
-    display: inline;
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-.radio-check {
-    display: inline;
+
+.radio-group input[type=radio], .radio-group label {
+    display: inline-block;
+}
+
+.radio-group input[type=radio] {
+    margin: 5px 0;
+    margin-right: 5px;
 }
 
 .textarea {
     width: 100%;
+    max-width: 750px;
     min-height: 150px; 
     overflow: hidden;
     padding: 2px 5px;
@@ -83,6 +111,7 @@ input[type=radio], input[type=checkbox] {
 
 #submit {
     display: block;
+    max-width: 100px;
     width: 50%;
     margin: 20px auto;
     padding: .75rem .5rem;

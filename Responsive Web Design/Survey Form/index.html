@@ -20,11 +20,11 @@
             <label for="name" id="name-label">Name </label>
             <input type="text" id="name" required placeholder="Full name">
             <label for="email" id="email-label">Email </label>
-            <input type="email" name="email" id="email" placeholder="Email address">
+            <input type="email" name="email" id="email" placeholder="Email address" required>
             <label for="number" id="phone-label">Phone Number </label>
-            <input type="number" name="phone-number" id="phone-label" placeholder="Phone number" max="7">
+            <input type="number" name="phone-number" id="phone-label" placeholder="Phone number">
             <label for="number" id="number-label">Age </label>
-            <input type="number" name="number" id="number" placeholder="Age">
+            <input type="number" name="number" id="number" placeholder="Age" min="18" max="120">
     
             <!-- Dropdown selection for pet age -->
             <p>What is your current age preference?</p>
@@ -36,21 +36,38 @@
     
             <!-- Radio selection for gender -->
             <p>Please select a preference for gender.</p>
-            <input type="radio" name="male" id="male">
-            <label for="male" class="radio-check">Male</label>
-            <input type="radio" name="female" id="female">
-            <label for="female" class="radio-check">Female</label>
-            <input type="radio" name="both" id="both">
-            <label for="both" class="radio-check">Doesn't matter</label>
+            <div class="radio-group">
+                <label for="male" class="radio-check">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Male
+                </label>
+                <label for="female" class="radio-check">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+                <label for="both" class="radio-check">
+                    <input type="radio" name="gender" id="both" value="doesn't matter">
+                    Doesn't matter
+                </label>
+            </div>
     
             <!-- Checkbox selection for contact time -->
             <p>What is the best time of day to reach you?</p>
-            <input type="checkbox" name="morning" id="morning">
-            <label for="morning" class="radio-check">Morning</label>
-            <input type="checkbox" name="afternoon" id="afternoon">
-            <label for="afternoon" class="radio-check">Afternoon</label>
-            <input type="checkbox" name="evening" id="evening">
-            <label for="evening" class="radio-check">Evening</label>
+            <div class="checkbox-group">
+                <label for="morning" class="radio-check">
+                    <input type="checkbox" name="morning" id="morning" value="morning">
+                    Morning
+                </label>
+                <label for="afternoon" class="radio-check">
+                    <input type="checkbox" name="afternoon" id="afternoon" value="afternoon">
+                    Afternoon
+                </label>
+                <label for="evening" class="radio-check">
+                    <input type="checkbox" name="evening" id="evening" value="evening">
+                    Evening
+                </label>
+            </div>
+            
     
             <!-- Text area for additional comments -->
             <p>Please let us know if you have any additional questions or concerns in the space below.</p>
