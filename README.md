@@ -8,7 +8,7 @@ This project focuses on a Pet Adoption Survey Form designed as a refresher to re
 * **Custom Styling**: Utilizes CSS for custom styles, enhancing the form's visual appeal and user experience.
 
 ## Technologies Used
-* TML5
+* HTML5
 * CSS3
 
 ## Project Goals
